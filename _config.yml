@@ -1,21 +1,38 @@
+# This is automatically added by GitHub Pages, I am adding it here so the local
+# copy behaves identically to the remote copy.
+safe: true
+lsi: false
+pygments: true
+# source: your top-level directory
+
 # This is the default format. 
 # For more see: http://jekyllrb.com/docs/permalinks/
 permalink: /:categories/:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
-pygments: true
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
-tagline: Site Tagline
+title : magia.se
+description: Site description for the metas
+logo: site-logo.png
+disqus_shortname: shortname
+search: true
+tagline: Ale's home on the Web
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
-  feedburner : feedname
+  name : Alejandro Machado
+  email : alejandro@magia.se
+  github : alemacgo
+  twitter : alemacgo
+  #feedburner : feedname
+
+owner:
+  name : Alejandro Machado
+  avatar: michael-rose-photo.jpg
+  email : alejandro@magia.se
+  github : alemacgo
+  twitter : alemacgo
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
@@ -25,7 +42,8 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+#production_url : http://username.github.io
+url: http://localhost:4000
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -127,4 +145,21 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
+  #
+  #
+
+# Links to include in top navigation
+# For external links add external: true
+links:
+  - title: About
+    url: /about
+  - title: Articles
+    url: /articles
+  - title: Google
+    url: http://google.com
+    external: true
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+pygments:    true
+markdown:    kramdown
